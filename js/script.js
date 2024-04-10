@@ -1,11 +1,12 @@
 
 
-let seconds = 10;
+let seconds = 30;
 printTime(seconds);
 
 const countdown = setInterval(function() {
     if (seconds != 0) {
         seconds--;
+        console.log(seconds);
     } else {
         seconds = 0
         clearInterval(seconds);
