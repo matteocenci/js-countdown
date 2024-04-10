@@ -1,13 +1,14 @@
-const now = new Date();
 
-let seconds = now.getSeconds(59);
+
+let seconds = 10;
 printTime(seconds);
 
 const countdown = setInterval(function() {
-    if (seconds < 59) {
+    if (seconds != 0) {
         seconds--;
     } else {
         seconds = 0
+        clearInterval(seconds);
     }
 
     printTime(seconds);
